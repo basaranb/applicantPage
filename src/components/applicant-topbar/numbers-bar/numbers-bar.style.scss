@@ -1,0 +1,11 @@
+.numbersBar {
+  display: flex;
+  flex-direction: row;
+  .number {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .label {
+    font-size: 12px;
+  }
+}

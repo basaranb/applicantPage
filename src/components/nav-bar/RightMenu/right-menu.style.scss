@@ -1,0 +1,17 @@
+button {
+  border: none; /* Remove borders */
+  cursor: pointer; /* Mouse pointer on hover */
+  background-color: #f8f8f8;
+  .iconButton {
+    height: 24px;
+    width: 24px;
+  }
+}
+.contactBtnGrp {
+  display: flex;
+  align-items: center;
+  .contactText {
+    font-weight: 900;
+    margin-left: 10px;
+  }
+}

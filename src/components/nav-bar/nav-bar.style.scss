@@ -1,0 +1,32 @@
+button {
+  border: none; /* Remove borders */
+  cursor: pointer; /* Mouse pointer on hover */
+  background-color: #f8f8f8;
+
+  .iconButton {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.nav-bar {
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+
+  margin-right: 5%;
+  margin-left: 5%;
+
+  div:last-child {
+    margin-left: auto;
+  }
+}
+.logo {
+  width: 150px;
+  margin-left: 40px;
+}
+
+.RightMenu {
+  float: right;
+}
