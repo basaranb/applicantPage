@@ -5,11 +5,13 @@ button {
   .iconButton {
     height: 24px;
     width: 24px;
+    color: #4a4a4a;
   }
 }
 .contactBtnGrp {
   display: flex;
   align-items: center;
+  color: #4a4a4a;
   .contactText {
     font-weight: 900;
     margin-left: 10px;

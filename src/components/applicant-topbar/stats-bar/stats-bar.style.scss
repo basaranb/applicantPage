@@ -1,0 +1,7 @@
+.statsBar {
+  display: inline-flex;
+  flex-direction: row;
+  .stat:last-child {
+    border-right: none;
+  }
+}

@@ -1,13 +1,17 @@
 import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
 import "./applicant-topbar.style.scss";
-import NumbersBar from "./numbers-bar/numbers-bar.component";
+import StatsBar from "./stats-bar/stats-bar.component";
 
 const ApplicationTopbar = () => (
   <div className="applicantTopbar">
-    <FiArrowLeft className="iconButton" />
-    <span>Applicants</span>
-    <NumbersBar />
+    <div className="leftContainer">
+      <FiArrowLeft className="iconButton" />
+      <span>Applicants</span>
+    </div>
+    <div>
+      <StatsBar />
+    </div>
   </div>
 );
 
