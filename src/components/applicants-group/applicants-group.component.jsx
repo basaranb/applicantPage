@@ -11,7 +11,11 @@ const ApplicantsGroup = ({ groupName, groupData, searchValue, timeout }) => {
   const checkFilter = (group) => {
     // console.log(group);
     if (searchValue) {
-      if (group.name.includes(searchValue) || group.email.includes(searchValue))
+      if (
+        group.name.includes(searchValue) ||
+        group.email.includes(searchValue) ||
+        group.phone.includes(searchValue)
+      )
         return group;
     } else return group;
   };

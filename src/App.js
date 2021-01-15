@@ -6,7 +6,7 @@ import { Route } from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <Route path="/page/" component={ApplicantsPage} />
+      <Route path="/" component={ApplicantsPage} />
     </div>
   );
 };
