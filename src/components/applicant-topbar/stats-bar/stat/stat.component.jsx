@@ -1,10 +1,10 @@
 import React from "react";
 import "./stat.style.scss";
 
-const Stat = () => (
+const Stat = ({ label, number }) => (
   <div className="stat">
-    <div className="number">25</div>
-    <div className="label">Total</div>
+    <div className="number">{number}</div>
+    <div className="label">{label}</div>
   </div>
 );
 

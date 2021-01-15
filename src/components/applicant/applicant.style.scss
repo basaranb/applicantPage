@@ -1,4 +1,7 @@
-$linkcolour: #fee8d3;
+$pinkcolour: #fee8d3;
+$bluecolour: #d3eefe;
+$greencolour: #d3fed7;
+$yellowcolour: #f5fed3;
 
 .applicant {
   width: 300px;
@@ -10,11 +13,44 @@ $linkcolour: #fee8d3;
   flex-direction: column;
   border: 1px solid rgb(233, 231, 231);
   margin: 20px 5px 20px 20px;
-  .circle {
+  .pinkCircle {
     height: 70px;
     width: 70px;
-    background-color: #fee8d3;
-    color: darken($linkcolour, 50%);
+    background-color: $pinkcolour;
+    color: darken($pinkcolour, 50%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    margin: auto;
+  }
+  .blueCircle {
+    height: 70px;
+    width: 70px;
+    background-color: $bluecolour;
+    color: darken($bluecolour, 50%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    margin: auto;
+  }
+  .greenCircle {
+    height: 70px;
+    width: 70px;
+    background-color: $greencolour;
+    color: darken($greencolour, 50%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    margin: auto;
+  }
+  .yellowCircle {
+    height: 70px;
+    width: 70px;
+    background-color: $yellowcolour;
+    color: darken($yellowcolour, 50%);
     border-radius: 50%;
     text-align: center;
     line-height: 70px;

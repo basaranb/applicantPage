@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-import ReactDOM from "react-dom";
 import "./applicant.style.scss";
 
 const Applicant = ({
@@ -9,16 +8,9 @@ const Applicant = ({
   applicantPhone,
   applicantEmail,
   applicantAppointmentDate,
+  applicantViewDate,
   applicantBid,
 }) => {
-  const [name, setName] = useState(applicantName);
-  const [phone, setPhone] = useState(applicantPhone);
-  const [email, setEmail] = useState(applicantEmail);
-  const [appointmentDate, setAppointmentDate] = useState(
-    applicantAppointmentDate
-  );
-  const [bid, setBid] = useState(applicantBid);
-
   const initials = (name) => {
     var arr = name.split(/(\s+)/).filter(function (e) {
       return e.trim().length > 0;
@@ -26,19 +18,29 @@ const Applicant = ({
     return arr[0][0] + arr[arr.length - 1][0];
   };
 
+  const randomColor = () => {
+    const classes = ["pinkCircle", "blueCircle", "greenCircle", "yellowCircle"];
+    return classes[Math.floor(Math.random() * classes.length)];
+  };
+
   return (
     <div className="applicant">
-      <div className="circle">{initials(name)}</div>
+      <div className={randomColor()}>{initials(applicantName)}</div>
       <span>
-        <strong>{name}</strong>
+        <strong>{applicantName}</strong>
       </span>
-      <span>{phone}</span>
-      <span>{email}</span>
-      {appointmentDate ? (
-        <div className="greyNtfy">Appointment {appointmentDate}</div>
+      <span>{applicantPhone}</span>
+      <span>{applicantEmail}</span>
+      {applicantViewDate ? (
+        <div className="greyNtfy">View Date {applicantViewDate}</div>
+      ) : null}
+      {applicantAppointmentDate ? (
+        <div className="greyNtfy">Appointment {applicantAppointmentDate}</div>
       ) : null}
       <br />
-      {bid ? <div className="orangeNtfy">BID {bid}€</div> : null}
+      {applicantBid ? (
+        <div className="orangeNtfy">BID {applicantBid}€</div>
+      ) : null}
     </div>
   );
 };

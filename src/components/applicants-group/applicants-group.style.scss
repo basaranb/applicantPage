@@ -2,4 +2,16 @@
   .groupTitle {
     margin-left: 20px;
   }
+  .spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  .timeoutError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
 }

@@ -3,14 +3,14 @@ import { FiArrowLeft } from "react-icons/fi";
 import "./applicant-topbar.style.scss";
 import StatsBar from "./stats-bar/stats-bar.component";
 
-const ApplicationTopbar = () => (
+const ApplicationTopbar = (props) => (
   <div className="applicantTopbar">
     <div className="leftContainer">
       <FiArrowLeft className="iconButton" />
       <span>Applicants</span>
     </div>
     <div>
-      <StatsBar />
+      <StatsBar stats={props.stats} />
     </div>
   </div>
 );
