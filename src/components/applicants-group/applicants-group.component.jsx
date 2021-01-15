@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import ScrollContainer from "react-indiana-drag-scroll";
 const ApplicantsGroup = ({ groupName, groupData, searchValue, timeout }) => {
-  let [loading, setLoading] = useState(true);
+  let [loading] = useState(true);
 
+  // Filter function for search bar
   const checkFilter = (group) => {
-    // console.log(group);
     if (searchValue) {
       if (
         group.name.includes(searchValue) ||
@@ -19,10 +19,6 @@ const ApplicantsGroup = ({ groupName, groupData, searchValue, timeout }) => {
         return group;
     } else return group;
   };
-
-  useEffect(() => {
-    console.log(timeout);
-  }, []);
 
   return (
     <div className="applicantsGroup">

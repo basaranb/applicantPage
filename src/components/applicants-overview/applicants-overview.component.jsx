@@ -7,17 +7,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { withRouter } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import { useQueryParam, NumberParam, StringParam } from "use-query-params";
-
-const ApplicantsOverview = (props) => {
+import { useQueryParam, StringParam } from "use-query-params";
+const ApplicantsOverview = () => {
   const [data, setData] = useState([]);
   const [stats, setStats] = useState([]);
-  const history = useHistory();
   const [timeOut, setTimeOut] = useState(false);
-
   const [searchV, setsearchV] = useQueryParam("search", StringParam);
   const [searchValue, setSearchValue] = useState(searchV);
-
   useEffect(() => {
     axios
       .get("https://run.mocky.io/v3/dd324fa9-35da-4c47-9b70-26fb209326a1", {
@@ -39,16 +35,6 @@ const ApplicantsOverview = (props) => {
         } else throw error;
       });
   }, []);
-
-  // function BlogPost() {
-  //   let { slug } = useParams();
-
-  console.log("searchV");
-  console.log(searchV);
-  // }
-  // BlogPost();
-
-  // Prepare the data for number stats
   const prepareStats = (result) => {
     return {
       total:
@@ -65,7 +51,6 @@ const ApplicantsOverview = (props) => {
   // Store the search value in url
   const handleSearchValue = (value) => {
     setSearchValue(value);
-    //history.push(`/page/?searchValue=${value}`);
     setsearchV(value);
   };
   return (

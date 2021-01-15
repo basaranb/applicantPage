@@ -14,7 +14,6 @@ const RightMenu = () => (
         <span className="contactText">Contact Support</span>
       </div>
     </button>
-
     <button className="messageBtn">
       <BiMessage className="iconButton" />
     </button>
@@ -26,5 +25,4 @@ const RightMenu = () => (
     </button>
   </div>
 );
-
 export default RightMenu;

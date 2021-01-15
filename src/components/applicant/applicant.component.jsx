@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
 import "./applicant.style.scss";
 
 const Applicant = ({
@@ -12,6 +11,7 @@ const Applicant = ({
   applicantBid,
 }) => {
   const [color, setColor] = useState(null);
+
   // Get the initial lettes for the names
   const initials = (name) => {
     var arr = name.split(/(\s+)/).filter(function (e) {
@@ -19,7 +19,7 @@ const Applicant = ({
     });
     return arr[0][0] + arr[arr.length - 1][0];
   };
-
+  // Assign random color style for initial circles
   useEffect(() => {
     const classes = ["pinkCircle", "blueCircle", "greenCircle", "yellowCircle"];
     setColor(classes[Math.floor(Math.random() * classes.length)]);
@@ -43,7 +43,6 @@ const Applicant = ({
           <div className="greyNtfy">Appointment {applicantAppointmentDate}</div>
         </div>
       ) : null}
-
       {applicantBid ? (
         <div className="ntfyContainer">
           <div className="orangeNtfy">BID {applicantBid}€</div>
@@ -52,5 +51,4 @@ const Applicant = ({
     </div>
   );
 };
-
 export default Applicant;

@@ -1,0 +1,95 @@
+{
+  "AppointmentSet": [
+    {
+      "name": "Friedrich Heinrich",
+      "phone": "+49 146 344 23811",
+      "email": "Friedrich.heinrich@gmail.com",
+      "appointmentDate": "22 JULY 14:00"
+    },
+    {
+      "name": "Hans-Ulrich",
+      "phone": "+49 146 344 23811",
+      "email": "Hans-Ulrichh@gmail.com",
+      "appointmentDate": "22 JULY 14:00"
+    },
+    {
+      "name": "Karlheinz Brandenburg",
+      "phone": "+49 146 344 23811",
+      "email": "karlheinzbrandenburg@gmail.com",
+      "appointmentDate": "22 JULY 14:00"
+    }
+  ],
+  "PropertyViewed": [
+    {
+      "name": "Maxmillian Von Mustermann",
+      "phone": "+49 146 344 23811",
+      "email": "max.mustermann@gmail.com",
+      "viewDate": "11 June 19:00",
+      "bid": "250.000"
+    },
+    {
+      "name": "Bernhard Weiß",
+      "phone": "+49 146 344 23811",
+      "email": "bernhard.weiß@gmail.com",
+      "viewDate": "11 June 19:00",
+      "bid": "250.000"
+    },
+    {
+      "name": "Hansjörg Felmy",
+      "phone": "+49 146 344 23811",
+      "email": "Hansjörg.felmy@gmail.com",
+      "viewDate": "11 June 19:00",
+      "bid": "250.000"
+    },
+    {
+      "name": "Gottschalk Godeslack",
+      "phone": "+49 146 344 23811",
+      "email": "gottschalk.godeslack@gmail.com",
+      "viewDate": "11 June 19:00",
+      "bid": "250.000"
+    },
+    {
+      "name": "Ekkehard Hardy",
+      "phone": "+49 146 344 23811",
+      "email": "ekkehard.hardy@gmail.com",
+      "viewDate": "11 June 19:00",
+      "bid": "250.000"
+    }
+  ],
+  "Interested": [
+    {
+      "name": "Bernhard Weiß",
+      "phone": "+49 146 344 23811",
+      "email": "bernhard.weiß@gmail.com",
+      "viewDate": "11 June 19:00"
+    },
+    {
+      "name": "Hansjörg Felmy",
+      "phone": "+49 146 344 23811",
+      "email": "Hansjörg.felmy@gmail.com",
+      "viewDate": "11 June 19:00"
+    },
+    {
+      "name": "Ekkehard Hardy",
+      "phone": "+49 146 344 23811",
+      "email": "ekkehard.hardy@gmail.com",
+      "viewDate": "11 June 19:00"
+    }
+  ],
+  "OfferAccepted": [
+    {
+      "name": "Maxmillian Von Mustermann",
+      "phone": "+49 146 344 23811",
+      "email": "max.mustermann@gmail.com",
+      "acceptDate": "11 June 19:00",
+      "offer": "300.000"
+    },
+    {
+      "name": "Bernhard Weiß",
+      "phone": "+49 146 344 23811",
+      "email": "bernhard.weiß@gmail.com",
+      "acceptDate": "11 June 19:00",
+      "offer": "300.000"
+    }
+  ]
+}
