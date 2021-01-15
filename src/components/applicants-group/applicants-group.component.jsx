@@ -31,30 +31,32 @@ const ApplicantsGroup = ({ groupName, groupData, searchValue, timeout }) => {
           {groupName} ({groupData ? <span>{groupData.length}</span> : null})
         </h3>
       </div>
-
-      {timeout ? (
-        <div className="timeoutError">
-          <h2>Request Timed Out</h2>
-        </div>
-      ) : groupData ? (
-        groupData.filter(checkFilter).map((userData) => {
-          console.log(userData);
-          return (
-            <Applicant
-              applicantName={userData.name}
-              applicantPhone={userData.phone}
-              applicantEmail={userData.email}
-              applicantAppointmentDate={userData.appointmentDate}
-              applicantViewDate={userData.viewDate}
-              applicantBid={userData.bid}
-            />
-          );
-        })
-      ) : (
-        <div className="spinner">
-          <ClipLoader loading={loading} />
-        </div>
-      )}
+      <div className="applicantsContainer">
+        {timeout ? (
+          <div className="timeoutError">
+            <h2>Request Timed Out</h2>
+          </div>
+        ) : groupData ? (
+          groupData.filter(checkFilter).map((userData) => {
+            console.log(userData);
+            return (
+              <Applicant
+                className="applicant"
+                applicantName={userData.name}
+                applicantPhone={userData.phone}
+                applicantEmail={userData.email}
+                applicantAppointmentDate={userData.appointmentDate}
+                applicantViewDate={userData.viewDate}
+                applicantBid={userData.bid}
+              />
+            );
+          })
+        ) : (
+          <div className="spinner">
+            <ClipLoader loading={loading} />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
