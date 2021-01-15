@@ -34,14 +34,20 @@ const Applicant = ({
       <span>{applicantPhone}</span>
       <span>{applicantEmail}</span>
       {applicantViewDate ? (
-        <div className="greyNtfy">View Date {applicantViewDate}</div>
+        <div className="ntfyContainer">
+          <div className="greyNtfy">View Date {applicantViewDate}</div>
+        </div>
       ) : null}
       {applicantAppointmentDate ? (
-        <div className="greyNtfy">Appointment {applicantAppointmentDate}</div>
+        <div className="ntfyContainer">
+          <div className="greyNtfy">Appointment {applicantAppointmentDate}</div>
+        </div>
       ) : null}
-      <br />
+
       {applicantBid ? (
-        <div className="orangeNtfy">BID {applicantBid}€</div>
+        <div className="ntfyContainer">
+          <div className="orangeNtfy">BID {applicantBid}€</div>
+        </div>
       ) : null}
     </div>
   );
