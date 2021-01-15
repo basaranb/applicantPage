@@ -15,8 +15,8 @@ const ApplicantsOverview = (props) => {
   const history = useHistory();
   const [timeOut, setTimeOut] = useState(false);
 
-  const [foo, setFoo] = useQueryParam("search", StringParam);
-  const [searchValue, setSearchValue] = useState(foo);
+  const [searchV, setsearchV] = useQueryParam("search", StringParam);
+  const [searchValue, setSearchValue] = useState(searchV);
 
   useEffect(() => {
     axios
@@ -43,8 +43,8 @@ const ApplicantsOverview = (props) => {
   // function BlogPost() {
   //   let { slug } = useParams();
 
-  console.log("foo");
-  console.log(foo);
+  console.log("searchV");
+  console.log(searchV);
   // }
   // BlogPost();
 
@@ -66,12 +66,12 @@ const ApplicantsOverview = (props) => {
   const handleSearchValue = (value) => {
     setSearchValue(value);
     //history.push(`/page/?searchValue=${value}`);
-    setFoo(value);
+    setsearchV(value);
   };
   return (
     <div className="applicantsOverview">
       <ApplicationTopbar stats={stats} />
-      <FiltersBar handleSearch={handleSearchValue} searchValue={foo} />
+      <FiltersBar handleSearch={handleSearchValue} searchValue={searchV} />
       <ApplicantsGroup
         timeout={timeOut}
         searchValue={searchValue}

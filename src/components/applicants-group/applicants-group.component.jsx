@@ -24,11 +24,20 @@ const ApplicantsGroup = ({ groupName, groupData, searchValue, timeout }) => {
     console.log(timeout);
   }, []);
 
+  useEffect(() => {
+    console.log("filtered len:");
+    console.log(groupData.filter(checkFilter).length);
+  });
+
   return (
     <div className="applicantsGroup">
       <div className="groupTitle">
         <h3>
-          {groupName} ({groupData ? <span>{groupData.length}</span> : null})
+          {groupName} (
+          {groupData ? (
+            <span>{groupData.filter(checkFilter).length}</span>
+          ) : null}
+          )
         </h3>
       </div>
       <ScrollContainer>
