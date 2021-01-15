@@ -29,3 +29,16 @@
     }
   }
 }
+@media only screen and (max-width: 800px) {
+  .filtersBar {
+    .searchBox {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .bidsFilter {
+      select {
+        margin-left: 0;
+      }
+    }
+  }
+}

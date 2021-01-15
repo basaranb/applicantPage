@@ -17,3 +17,14 @@ button {
     margin-left: 10px;
   }
 }
+@media only screen and (max-width: 800px) {
+  .userProfileBtn {
+    display: none;
+  }
+  .logoutBtn {
+    display: none;
+  }
+  .contactBtn {
+    display: none;
+  }
+}

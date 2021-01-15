@@ -8,7 +8,7 @@ import { GrPowerShutdown } from "react-icons/gr";
 
 const RightMenu = () => (
   <div className="rightMenu">
-    <button>
+    <button className="contactBtn">
       <div className="contactBtnGrp">
         <FaHeadset className="iconButton" />{" "}
         <span className="contactText">Contact Support</span>

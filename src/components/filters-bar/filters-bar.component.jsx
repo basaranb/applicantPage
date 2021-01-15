@@ -14,6 +14,7 @@ const FiltersBar = (props) => {
           key="random1"
           placeholder={"Search for applicant"}
           onChange={(e) => props.handleSearch(e.target.value)}
+          value={props.searchValue}
         />
       </div>
       <div className="bidsFilter">

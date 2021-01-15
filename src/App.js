@@ -1,15 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import NavBar from "./components/nav-bar/nav-bar.component";
-import ApplicantsOverview from "./components/applicants-overview/applicants-overview.component";
+import ApplicantsPage from "./pages/applicants.page";
+import { Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div>
-      <NavBar></NavBar>
-      <ApplicantsOverview></ApplicantsOverview>
+      <Route path="/page/" component={ApplicantsPage} />
     </div>
   );
-}
+};
 
 export default App;
